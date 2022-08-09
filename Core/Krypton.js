@@ -2,14 +2,14 @@
 let root;
 let root_template;
 // method to render template to dom 
-let renderDom=(root_id,template)=>{
+ export let renderDom=(root_id,template)=>{
 root_template=template;
 root=document.getElementById(root_id);
 root.innerHTML=root_template;
 }
 
 // setstate method 
-let setState=(template)=>{
+export let setState=(template)=>{
     let updateState=template;
     template=updateState;
     update_ui_state();
